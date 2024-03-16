@@ -8,6 +8,8 @@ import * as s3 from 'aws-cdk-lib/aws-s3';
 import * as fs from 'fs';
 import { v4 as uuidv4 } from 'uuid';
 
+import 'dotenv/config';
+
 export class SagemakerStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
